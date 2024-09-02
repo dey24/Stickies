@@ -8,7 +8,9 @@ const NotesPage = () => {
   return (
     <div>
       {notes.map((note) => (
-        <NoteCard note={note} key={note.$id} />
+        <div className="note-card-animate">
+          <NoteCard note={note} key={note.$id} />
+        </div>
       ))}
       <Controls />
     </div>
