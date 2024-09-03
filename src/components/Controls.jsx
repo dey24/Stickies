@@ -2,7 +2,8 @@ import React from "react";
 import AddButton from "./AddButton";
 import Colors from "./Colors";
 import colors from "../assets/colors-data.json";
-const Controls = () => {
+const Controls = (width) => {
+  console.log(width);
   return (
     <div id="controls">
       <AddButton />
